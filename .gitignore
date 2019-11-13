@@ -2,6 +2,7 @@
 .idea
 .vscode
 package-lock.json
+csscomb.json
 *.ai
 *.log
 *.pdf
