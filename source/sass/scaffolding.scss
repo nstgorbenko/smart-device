@@ -1,0 +1,53 @@
+@font-face {
+  font-weight: 400;
+  font-family: "PT Mono";
+  font-style: normal;
+
+  src: url("../fonts/PTMono.woff2") format("woff2"),
+    url("../fonts/PTMono.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+
+  src: url("../fonts/RobotoCondensed.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.alternative-font {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}

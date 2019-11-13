@@ -1,0 +1,41 @@
+.social__link {
+  position: relative;
+  display: block;
+  margin-right: 16px;
+  width: 26px;
+  height: 26px;
+  outline: none;
+  border-radius: 50%;
+  background: #ffffff url("../../img/icon-fb.svg") no-repeat 50% 50%;
+
+  &--fb {
+    background-image: url("../../img/icon-fb.svg");
+  }
+
+  &--ok {
+    background-image: url("../../img/icon-ok.svg");
+  }
+
+  &--vk {
+    background-image: url("../../img/icon-vk.svg");
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #00b2ff;
+    box-shadow: 0 0 0 3px #ffffff,
+      0 0 0 6px #00b2ff;
+  }
+
+  &:active {
+    background-color: #006b99;
+    box-shadow: 0 0 0 3px #ffffff,
+      0 0 0 6px #006b99;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social__link {
+    margin-right: 17px;
+  }
+}

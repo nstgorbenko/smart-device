@@ -1,0 +1,38 @@
+.page {
+  margin: 0;
+  font-size: 16px;
+  font-family: "PT Mono", "Courier New", monospace;
+  line-height: 22px;
+}
+
+.page__header {
+  padding-top: 33px;
+  min-height: 845px;
+}
+
+.page__footer {
+  padding-top: 65px;
+}
+
+@media (max-width: $tablet-width) {
+  .page__header {
+    padding-top: 15px;
+    min-height: 671px;
+  }
+
+  .page__footer {
+    padding-top: 18px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page__header {
+    min-height: 620px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page__footer {
+    padding-top: 46px;
+  }
+}

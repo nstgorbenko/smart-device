@@ -1,0 +1,43 @@
+.call {
+  position: fixed;
+  top: calc(50% - 300px);
+  left: calc(50% - 245px);
+  z-index: 10;
+  display: none;
+  min-height: 605px;
+  width: 490px;
+  background: #00b2ff;
+  color: #ffffff;
+}
+
+.call__title {
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.call__text {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 380px;
+}
+
+.call__letter {
+  margin: 0 auto;
+  margin-top: 0;
+  width: 414px;
+}
+
+.call__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background: url("../../img/icon-cross.svg") no-repeat 50% 50%;
+}
