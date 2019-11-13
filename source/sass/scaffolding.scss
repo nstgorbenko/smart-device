@@ -1,26 +1,23 @@
 @font-face {
   font-weight: 400;
-  font-family: "PT Mono";
   font-style: normal;
-
+  font-family: "PT Mono";
   src: url("../fonts/PTMono.woff2") format("woff2"),
     url("../fonts/PTMono.woff") format("woff");
 }
 
 @font-face {
   font-weight: 400;
-  font-family: "Roboto Condensed";
   font-style: normal;
-
+  font-family: "Roboto Condensed";
   src: url("../fonts/RobotoCondensed.woff2") format("woff2"),
     url("../fonts/RobotoCondensed.woff") format("woff");
 }
 
 @font-face {
   font-weight: 700;
-  font-family: "Roboto Condensed";
   font-style: normal;
-
+  font-family: "Roboto Condensed";
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
     url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
@@ -37,14 +34,15 @@ img {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   margin: -1px;
   padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
+  width: 1px;
+  height: 1px;
   border: 0;
-  clip: rect(0 0 0 0);
+  white-space: nowrap;
+
   clip-path: inset(100%);
 }
 
