@@ -183,9 +183,11 @@
           </ul>
         </div>
 
-        <nav class="main-navigation main-footer__navigation">
+        <nav class="main-navigation main-footer__navigation dropdown">
           <p class="main-navigation__title alternative-font">Разделы сайта</p>
-          <ul class="main-navigation__list list-reset">
+          <input class="dropdown__checkbox visually-hidden" type="checkbox" id="nav-toggle">
+          <label class="dropdown__checkbox-name" for="nav-toggle"></label>
+          <ul class="main-navigation__list dropdown__list list-reset">
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">О компании</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Продукты</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Производство печатных плат</a>
@@ -197,9 +199,11 @@
           </ul>
         </nav>
 
-        <address class="contacts main-footer__contacts">
+        <address class="contacts main-footer__contacts dropdown">
           <p class="contacts__title alternative-font">Наш офис</p>
-          <ul class="contacts__list list-reset">
+          <input class="dropdown__checkbox visually-hidden" type="checkbox" id="contacts-toggle">
+          <label class="dropdown__checkbox-name" for="contacts-toggle"></label>
+          <ul class="contacts__list dropdown__list list-reset">
             <li class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</li>
             <li class="contacts__item">
               <a class="contacts__item-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
