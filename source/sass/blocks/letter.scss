@@ -26,6 +26,7 @@
   flex-grow: 1;
   padding: 12px 0 16px 18px;
   border: none;
+  border-radius: 0;
   background-color: #19baff;
   color: #ffffff;
   font: inherit;
@@ -131,7 +132,7 @@
 }
 
 .letter__checkbox-item:checked + .letter__checkbox::before {
-  background: url("../../img/icon-check.svg") no-repeat 50% 50%;
+  background: url("../img/icon-check.svg") no-repeat 50% 50%;
 }
 
 @media (max-width: $tablet-width) {

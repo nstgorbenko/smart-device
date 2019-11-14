@@ -9,17 +9,20 @@
     right: -9px;
     width: 36px;
     height: 36px;
-    background: url("../../img/icon-minus.svg") no-repeat 50% 50%;
+    background: url("../img/icon-minus.svg") no-repeat 50% 50%;
     cursor: pointer;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: 2px solid #1b2d37;
     }
 
     &:active {
       outline: 2px solid #c4c4c4;
     }
+  }
+
+  .dropdown__checkbox:focus + .dropdown__checkbox-name {
+    outline: 2px solid #1b2d37;
   }
 
   .dropdown__list {
@@ -37,6 +40,6 @@
   }
 
   .dropdown__checkbox:checked + .dropdown__checkbox-name {
-    background-image: url("../../img/icon-plus.svg");
+    background-image: url("../img/icon-plus.svg");
   }
 }

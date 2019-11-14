@@ -44,6 +44,7 @@
   margin-left: 98px;
   padding: 18px;
   max-width: 371px;
+  outline: none;
   border-radius: 5px;
   background-color: #00b2ff;
   color: #ffffff;
@@ -78,12 +79,22 @@
   left: -32px;
   display: block;
   width: 100px;
+  outline: none;
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
   opacity: 0.5;
   transform: rotate(-90deg);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 @media (max-width: $tablet-width) {

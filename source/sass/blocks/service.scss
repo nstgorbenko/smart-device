@@ -33,17 +33,17 @@
   background-size: cover;
 
   &--production {
-    background: #1b2d37 url("../../img/screen-production-desktop.png") no-repeat 50% 50%;
+    background: #1b2d37 url("../img/screen-production-desktop.png") no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--install {
-    background: url("../../img/screen-install-desktop.png") no-repeat 50% 50%;
+    background: url("../img/screen-install-desktop.png") no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--light {
-    background: url("../../img/screen-light-desktop.png") no-repeat 50% 50%;
+    background: url("../img/screen-light-desktop.png") no-repeat 50% 50%;
     background-size: cover;
   }
 }
@@ -55,6 +55,7 @@
   padding-top: 52px;
   padding-left: 44px;
   min-height: 620px;
+  outline: none;
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
@@ -66,23 +67,22 @@
     bottom: 0;
     width: 63px;
     height: 61px;
-    background: #00b2ff url("../../img/icon-arrow.svg") no-repeat 50% 50%;
+    background: #00b2ff url("../img/icon-arrow.svg") no-repeat 50% 50%;
     content: "";
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-color: #006b99;
   }
 
-  &:hover::before,
-  &:focus::before {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 390px;
-    height: 640px;
-    border: 3px solid #00b2ff;
-    content: "";
+  &:hover,
+  &:focus {
+    outline: 2px solid #00b2ff;
+  }
+
+  &:active {
+    outline: 2px solid #006b99;
   }
 }
 
@@ -109,17 +109,17 @@
     width: 100%;
 
     &--production {
-      background: #1b2d37 url("../../img/screen-production-tablet.png") no-repeat 50% 50%;
+      background: #1b2d37 url("../img/screen-production-tablet.png") no-repeat 50% 50%;
       background-size: cover;
     }
 
     &--install {
-      background: url("../../img/screen-install-tablet.png") no-repeat 50% 50%;
+      background: url("../img/screen-install-tablet.png") no-repeat 50% 50%;
       background-size: cover;
     }
 
     &--light {
-      background: url("../../img/screen-light-tablet.png") no-repeat 50% 50%;
+      background: url("../img/screen-light-tablet.png") no-repeat 50% 50%;
       background-size: cover;
     }
   }
@@ -135,7 +135,7 @@
       bottom: 0;
       width: 63px;
       height: 61px;
-      background: #00b2ff url("../../img/icon-arrow.svg") no-repeat 50% 50%;
+      background: #00b2ff url("../img/icon-arrow.svg") no-repeat 50% 50%;
       content: "";
     }
 
@@ -167,17 +167,17 @@
     margin-bottom: 30px;
 
     &--production {
-      background: #1b2d37 url("../../img/screen-production-mobile.png") no-repeat 50% 50%;
+      background: #1b2d37 url("../img/screen-production-mobile.png") no-repeat 50% 50%;
       background-size: cover;
     }
 
     &--install {
-      background: url("../../img/screen-install-mobile.png") no-repeat 50% 50%;
+      background: url("../img/screen-install-mobile.png") no-repeat 50% 50%;
       background-size: cover;
     }
 
     &--light {
-      background: url("../../img/screen-light-mobile.png") no-repeat 50% 50%;
+      background: url("../img/screen-light-mobile.png") no-repeat 50% 50%;
       background-size: cover;
     }
   }

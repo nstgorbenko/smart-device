@@ -6,18 +6,18 @@
   height: 26px;
   outline: none;
   border-radius: 50%;
-  background: #ffffff url("../../img/icon-fb.svg") no-repeat 50% 50%;
+  background: #ffffff no-repeat 50% 50%;
 
   &--fb {
-    background-image: url("../../img/icon-fb.svg");
+    background-image: url("../img/icon-fb.svg");
   }
 
   &--ok {
-    background-image: url("../../img/icon-ok.svg");
+    background-image: url("../img/icon-ok.svg");
   }
 
   &--vk {
-    background-image: url("../../img/icon-vk.svg");
+    background-image: url("../img/icon-vk.svg");
   }
 
   &:hover,

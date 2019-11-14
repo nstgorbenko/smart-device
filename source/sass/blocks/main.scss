@@ -1,5 +1,5 @@
 .main__wrapper {
-  background: #ffffff url("../../img/main-bg-desktop.svg") no-repeat calc(50% - 125px) -28px;
+  background: #ffffff url("../img/main-bg-desktop.svg") no-repeat calc(50% - 125px) -28px;
 }
 
 .main__features {
@@ -33,7 +33,7 @@
 
 @media (max-width: $tablet-width) {
   .main__wrapper {
-    background: #ffffff url("../../img/main-bg-tablet.svg") no-repeat calc(50% + 364px) 90px;
+    background: #ffffff url("../img/main-bg-tablet.svg") no-repeat calc(50% + 364px) 90px;
   }
 
   .main__features {
@@ -62,7 +62,7 @@
 
 @media (max-width: $mobile-width) {
   .main__wrapper {
-    background: #ffffff url("../../img/main-bg-mobile.svg") no-repeat calc(50% + 258px) calc(50% + 150px);
+    background: #ffffff url("../img/main-bg-mobile.svg") no-repeat calc(50% + 258px) calc(50% + 150px);
   }
 
   .main__features {
