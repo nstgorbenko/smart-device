@@ -1,7 +1,18 @@
 .main-header {
+  position: relative;
+  overflow: hidden;
   background: #1b2d37 no-repeat;
   background-image: url("../../img/triangle-bg-desktop.svg"), url("../../img/header-bg-desktop.png");
-  background-position: 83.5% 50%, 0 0;
+  background-position: 83.5% 50%, 50% 50%;
+  background-size: auto, cover;
+}
+
+.main-header__image {
+  position: absolute;
+  top: 258px;
+  left: calc(50% + 80px);
+  width: 705px;
+  height: 515px;
 }
 
 .main-header__logo-image {
@@ -14,7 +25,9 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-left: 13px;
-  width: 1411px;
+  min-width: 940px;
+  max-width: 1411px;
+  width: 73%;
 }
 
 .main-header__logo {
@@ -113,15 +126,24 @@
   padding-top: 57px;
   padding-bottom: 144px;
   padding-left: 6px;
-  width: 1411px;
+  min-width: 840px;
+  max-width: 1411px;
+  width: 73%;
 }
 
 @media (max-width: $tablet-width) {
   .main-header {
     background: #1b2d37 no-repeat;
     background-image: url("../../img/triangle-bg-tablet.svg"), url("../../img/header-bg-tablet.png");
-    background-position: 83% 0, 0 0;
+    background-position: calc(100% + 200px) -40px, 0 0;
     background-size: auto, cover;
+  }
+
+  .main-header__image {
+    top: 113px;
+    left: calc(50% + 125px);
+    width: 465px;
+    height: 340px;
   }
 
   .main-header__logo {
@@ -130,7 +152,8 @@
 
   .main-header__contacts {
     padding-left: 0;
-    width: 720px;
+    min-width: 720px;
+    width: 94%;
   }
 
   .main-header__contacts-list {
@@ -166,7 +189,8 @@
     margin-top: 35px;
     padding-top: 75px;
     padding-left: 0;
-    width: 594px;
+    min-width: 594px;
+    width: 77%;
   }
 }
 
@@ -174,8 +198,16 @@
   .main-header {
     background: #1b2d37 no-repeat;
     background-image: url("../../img/triangle-bg-mobile.svg"), url("../../img/header-bg-mobile.png");
-    background-position: 66.5% 0, 0 0;
+    background-position: calc(100% + 257px) -46px, 0 0;
     background-size: auto, cover;
+  }
+
+  .main-header__image {
+    top: 92px;
+    right: -7px;
+    left: auto;
+    width: 301px;
+    height: 220px;
   }
 
   .main-header__logo {
@@ -189,7 +221,8 @@
   }
 
   .main-header__contacts {
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 
   .main-header__contacts-link {
@@ -203,6 +236,7 @@
   .main-header__main-product {
     margin-top: 31px;
     padding-bottom: 70px;
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 }

@@ -1,29 +1,35 @@
 .write-us {
   background: #00b2ff no-repeat;
   background-image: url("../../img/paper-airplane.png"), url("../../img/write-bg-desktop.svg");
-  background-position: 350px 160px, 175px -60px;
+  background-position: calc(50% - 346px) 160px, calc(50% + 96px) -60px;
   color: #ffffff;
 }
 
 .write-us__wrapper {
+  display: flex;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 629px;
-  width: 1220px;
+  max-width: 1220px;
+  width: 64%;
 }
 
 .write-us__lead {
   margin: 0;
+  margin-top: -18px;
+  margin-left: -3px;
   font-size: 36px;
   line-height: 51px;
 }
 
 .write-us__text {
   margin-top: 10px;
-  margin-left: 5px;
+  margin-bottom: 34px;
+  margin-left: 1px;
 }
 
 .write-us__letter {
+  margin-right: 20px;
+  margin-left: auto;
   width: 570px;
 }
 
@@ -34,7 +40,7 @@
 
   .write-us__wrapper {
     padding-left: 0;
-    width: 590px;
+    width: 76%;
   }
 
   .write-us__lead {
@@ -44,19 +50,23 @@
 
   .write-us__text {
     margin-top: 16px;
+    min-width: 500px;
   }
 
   .write-us__letter {
-    width: 590px;
+    margin: 0 auto;
+    width: auto;
   }
 }
 
 @media (max-width: $mobile-width) {
   .write-us__wrapper {
-    width: 290px;
+    width: 90%;
   }
 
   .write-us__lead {
+    margin-top: 0;
+    margin-left: 0;
     font-size: 28px;
     line-height: 39px;
   }
@@ -65,9 +75,6 @@
     margin-top: 13px;
     margin-bottom: 10px;
     margin-left: 0;
-  }
-
-  .write-us__letter {
-    width: 290px;
+    min-width: 280px;
   }
 }

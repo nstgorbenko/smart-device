@@ -15,12 +15,13 @@
 
 .main-footer__wrapper {
   margin: 0 auto;
-  width: 1414px;
+  min-width: 1000px;
+  max-width: 1411px;
+  width: 74%;
 }
 
 .main-footer__top {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 60px;
 }
@@ -54,6 +55,10 @@
   flex-direction: column;
 }
 
+.main-footer__contacts {
+  flex-shrink: 0;
+}
+
 .main-footer__bottom {
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +67,6 @@
   letter-spacing: 0.04em;
   font-size: 13px;
   line-height: 24px;
-  opacity: 0.5;
 }
 
 .main-footer__bottom a {
@@ -71,12 +75,12 @@
 }
 
 .main-footer__copyright {
-  margin-right: 75px;
-  padding-left: 7px;
+  padding-left: 5px;
+  width: 16%;
+  opacity: 0.5;
 }
 
 .main-footer__year {
-  margin-right: 142px;
   color: #1b2d37;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -87,10 +91,14 @@
   &--tablet {
     display: none;
   }
+
+  &--desktop {
+    width: 26.5%;
+  }
 }
 
 .main-footer__privacy {
-  margin-left: 142px;
+  opacity: 0.5;
 }
 
 .main-footer__privacy-link {
@@ -108,6 +116,7 @@
 
 .main-footer__developer {
   margin-left: auto;
+  opacity: 0.5;
 }
 
 .main-footer__developer-link {
@@ -123,15 +132,35 @@
   }
 }
 
+
+.main-footer__navigation {
+  margin-right: 20px;
+}
+
+
 @media (max-width: $tablet-width) {
   .main-footer {
+    position: relative;
+    background: #fafafa;
+
     &::after {
-      display: none;
+      bottom: 69px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 97px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(98, 105, 98, 0.2);
+      content: "";
     }
   }
 
   .main-footer__wrapper {
-    width: 720px;
+    min-width: 720px;
+    width: 94%;
   }
 
   .main-footer__logo {
@@ -144,16 +173,7 @@
     flex-direction: row;
     flex-grow: 1;
     padding-bottom: 24px;
-
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: calc(50% - 511px);
-      width: 1023px;
-      height: 1px;
-      background-color: rgba(98, 105, 98, 0.2);
-      content: "";
-    }
+    min-width: 720px;
   }
 
   .main-footer__year {
@@ -185,17 +205,9 @@
 
   .main-footer__top {
     position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-bottom: 37px;
-
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: calc(50% - 511px);
-      width: 1023px;
-      height: 1px;
-      background-color: rgba(98, 105, 98, 0.2);
-      content: "";
-    }
   }
 
   .main-footer__copyright {
@@ -212,19 +224,35 @@
 }
 
 @media (max-width: $mobile-width) {
+  .main-footer {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
   .main-footer__wrapper {
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 
   .main-footer__social-wrapper {
     align-items: center;
     flex-direction: column;
     padding-bottom: 56px;
-    width: 290px;
+    min-width: 290px;
 
     &::after {
-      left: calc(50% - 383px);
-      width: 767px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(98, 105, 98, 0.2);
+      content: "";
     }
   }
 
@@ -233,8 +261,13 @@
     padding-bottom: 28px;
 
     &::after {
-      left: calc(50% - 383px);
-      width: 767px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(98, 105, 98, 0.2);
+      content: "";
     }
   }
 
@@ -254,14 +287,15 @@
   .main-footer__navigation {
     position: relative;
     margin-top: 30px;
+    margin-right: 0;
     padding-bottom: 28px;
-    width: 290px;
+    min-width: 270px;
 
     &::after {
       position: absolute;
       bottom: 0;
-      left: calc(50% - 383px);
-      width: 767px;
+      left: 0;
+      width: 100%;
       height: 1px;
       background-color: rgba(98, 105, 98, 0.2);
       content: "";
@@ -271,7 +305,6 @@
   .main-footer__contacts {
     margin-top: 30px;
     min-width: 270px;
-    width: 270px;
   }
 
   .main-footer__bottom {

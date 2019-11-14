@@ -1,13 +1,14 @@
 .main__wrapper {
-  background: #ffffff url("../../img/main-bg-desktop.svg") no-repeat 0 -140px;
+  background: #ffffff url("../../img/main-bg-desktop.svg") no-repeat calc(50% - 125px) -28px;
 }
 
 .main__features {
   box-sizing: border-box;
   margin: 0 auto;
-  margin-top: 112px;
-  padding-left: 16px;
-  width: 1186px;
+  padding-top: 112px;
+  min-width: 1000px;
+  max-width: 1186px;
+  width: 62%;
 }
 
 .main__about {
@@ -16,7 +17,9 @@
   margin-top: 75px;
   padding-bottom: 108px;
   padding-left: 197px;
-  width: 1186px;
+  min-width: 1000px;
+  max-width: 1186px;
+  width: 62%;
 }
 
 .main__service {
@@ -30,20 +33,21 @@
 
 @media (max-width: $tablet-width) {
   .main__wrapper {
-    background: #ffffff url("../../img/main-bg-tablet.svg") no-repeat 300px 36px;
+    background: #ffffff url("../../img/main-bg-tablet.svg") no-repeat calc(50% + 364px) 90px;
   }
 
   .main__features {
-    margin-top: 54px;
-    padding-left: 0;
-    width: 720px;
+    padding-top: 54px;
+    min-width: 720px;
+    width: 94%;
   }
 
   .main__about {
     margin-top: 0;
     padding-bottom: 85px;
     padding-left: 185px;
-    width: 720px;
+    min-width: 720px;
+    width: 94%;
   }
 
   .main__service {
@@ -58,18 +62,20 @@
 
 @media (max-width: $mobile-width) {
   .main__wrapper {
-    background: #ffffff url("../../img/main-bg-mobile.svg") no-repeat 155px 612px;
+    background: #ffffff url("../../img/main-bg-mobile.svg") no-repeat calc(50% + 258px) calc(50% + 150px);
   }
 
   .main__features {
-    margin-top: 40px;
-    width: 290px;
+    padding-top: 40px;
+    min-width: 290px;
+    width: 90%;
   }
 
   .main__about {
     padding-bottom: 65px;
     padding-left: 0;
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 
   .main__service {

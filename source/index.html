@@ -34,28 +34,29 @@
         </li>
         <li class="main-header__contacts-item main-header__contacts-item--phone">
           <a class="main-header__contacts-link main-header__contacts-link--phone" href="tel:+74950005252"
-            aria-label="Позвонить">+7 (495) 000
-            52 52</a>
+            aria-label="Позвонить">+7 (495) 000 52 52</a>
         </li>
       </ul>
       <p class="main-header__button alternative-font"><a class="main-header__link" href="#">Заказать звонок</a></p>
     </section>
 
-    <section class="main-product main-header__main-product">
-      <h2 class="main-product__title alternative-font">Печатные платы</h2>
-      <p class="main-product__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="main-product__button alternative-font" href="#">
-        <span class="main-product__button-text main-product__button-text--tablet">Получить бесплатную
-          консультацию</span>
-        <span class="main-product__button-text main-product__button-text--mobile">Бесплатная консультация</span>
-      </a>
+    <div class="main-header__product-wrapper">
+      <section class="main-product main-header__main-product">
+        <h2 class="main-product__title alternative-font">Печатные платы</h2>
+        <p class="main-product__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="main-product__button alternative-font" href="#">
+          <span class="main-product__button-text main-product__button-text--tablet">Получить бесплатную
+            консультацию</span>
+          <span class="main-product__button-text main-product__button-text--mobile">Бесплатная консультация</span>
+        </a>
+        <a class="main-product__scroll" href="#">Скролл вниз</a>
+      </section>
       <picture>
         <source media="(min-width: 1024px)" srcset="img/product-desktop.png">
         <source media="(min-width: 768px)" srcset="img/product-tablet.png">
-        <img class="main-product__image" src="img/product-mobile.png" width="294" height="220" alt="Печатные платы">
+        <img class="main-header__image" src="img/product-mobile.png" width="301" height="220" alt="Печатные платы">
       </picture>
-      <a class="main-product__scroll" href="#">Скролл вниз</a>
-    </section>
+    </div>
   </header>
 
   <main class="main page__main">
@@ -67,8 +68,9 @@
         <ul class="features__list list-reset">
           <li class="features__item">
             <h3 class="features__item-title alternative-font">Оперативные сроки</h3>
-            <p class="features__item-text">Усовершенствованная логистическая система позволяет нам <br>просчитывать
-              стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
+            <p class="features__item-text">Усовершенствованная логистическая система позволяет нам
+              просчитывать&nbsp;стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.
+            </p>
             <svg class="features__item-icon features__item-icon--stopwatch" width="29" height="35">
               <use xlink:href="#icon-stopwatch"></use>
             </svg>
@@ -92,7 +94,7 @@
           <li class="features__item">
             <h3 class="features__item-title alternative-font">Персонализация стоимости</h3>
             <p class="features__item-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
-              <br>установить ту цену, которая Вас устраивает.</p>
+              установить&nbsp;ту цену, которая Вас устраивает.</p>
             <svg class="features__item-icon features__item-icon--price" width="35" height="35">
               <use xlink:href="#icon-price"></use>
             </svg>
@@ -134,11 +136,11 @@
     <section class="write-us main__write-us">
       <div class="write-us__wrapper">
         <h2 class="visually-hidden">Задать вопрос</h2>
-        <p class="write-us__lead alternative-font">Остались вопросы? Задайте их нам!</p>
-        <p class="write-us__text">Мы проконсультируем Вас бесплатно</p>
         <form class="letter write-us__letter" method="post" action="https://echo.htmlacademy.ru">
           <div class="letter__wrapper">
-            <p class="letter__item">
+            <p class="write-us__lead alternative-font">Остались вопросы? Задайте их нам!</p>
+            <p class="write-us__text">Мы проконсультируем Вас бесплатно</p>
+            <p class="letter__item letter__item--name">
               <input class="letter__item-field" type="text" name="name" placeholder="Имя" aria-label="Имя">
             </p>
             <p class="letter__item">
@@ -228,8 +230,7 @@
     <form class="letter letter--popup call__letter" method="post" action="https://echo.htmlacademy.ru">
       <div class="letter__wrapper">
         <p class="letter__item letter__item--popup">
-          <input class="letter__item-field letter__item-field--popup" name="name" placeholder="Имя"
-            aria-label="Имя">
+          <input class="letter__item-field letter__item-field--popup" name="name" placeholder="Имя" aria-label="Имя">
         </p>
         <p class="letter__item letter__item--popup">
           <input class="letter__item-field letter__item-field--popup" type="tel" name="tel" placeholder="Телефон"

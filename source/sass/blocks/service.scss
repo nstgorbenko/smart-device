@@ -7,7 +7,9 @@
   margin: 0 auto;
   padding-top: 89px;
   padding-left: 16px;
-  width: 1186px;
+  min-width: 1000px;
+  max-width: 1186px;
+  width: 62%;
 }
 
 .service__text {
@@ -27,16 +29,22 @@
 }
 
 .service__item {
+  width: 31.5%;
+  background-size: cover;
+
   &--production {
-    background: #1b2d37 url("../../img/screen-production-desktop.png") no-repeat 0 0;
+    background: #1b2d37 url("../../img/screen-production-desktop.png") no-repeat 50% 50%;
+    background-size: cover;
   }
 
   &--install {
-    background: url("../../img/screen-install-desktop.png") no-repeat 0 0;
+    background: url("../../img/screen-install-desktop.png") no-repeat 50% 50%;
+    background-size: cover;
   }
 
   &--light {
-    background: url("../../img/screen-light-desktop.png") no-repeat 0 0;
+    background: url("../../img/screen-light-desktop.png") no-repeat 50% 50%;
+    background-size: cover;
   }
 }
 
@@ -47,7 +55,6 @@
   padding-top: 52px;
   padding-left: 44px;
   min-height: 620px;
-  width: 370px;
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
@@ -83,7 +90,8 @@
   .service__wrapper {
     padding-top: 49px;
     padding-left: 0;
-    width: 715px;
+    min-width: 715px;
+    width: 93%;
   }
 
   .service__text {
@@ -98,17 +106,21 @@
 
   .service__item {
     margin-bottom: 46px;
+    width: 100%;
 
     &--production {
-      background: #1b2d37 url("../../img/screen-production-tablet.png") no-repeat 0 0;
+      background: #1b2d37 url("../../img/screen-production-tablet.png") no-repeat 50% 50%;
+      background-size: cover;
     }
 
     &--install {
-      background: url("../../img/screen-install-tablet.png") no-repeat 0 0;
+      background: url("../../img/screen-install-tablet.png") no-repeat 50% 50%;
+      background-size: cover;
     }
 
     &--light {
-      background: url("../../img/screen-light-tablet.png") no-repeat 0 0;
+      background: url("../../img/screen-light-tablet.png") no-repeat 50% 50%;
+      background-size: cover;
     }
   }
 
@@ -116,7 +128,6 @@
     padding-top: 39px;
     padding-left: 42px;
     min-height: 256px;
-    width: 715px;
 
     &::after {
       position: absolute;
@@ -137,7 +148,8 @@
 @media (max-width: $mobile-width) {
   .service__wrapper {
     padding-top: 50px;
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 
   .service__text {
@@ -153,12 +165,26 @@
 
   .service__item {
     margin-bottom: 30px;
+
+    &--production {
+      background: #1b2d37 url("../../img/screen-production-mobile.png") no-repeat 50% 50%;
+      background-size: cover;
+    }
+
+    &--install {
+      background: url("../../img/screen-install-mobile.png") no-repeat 50% 50%;
+      background-size: cover;
+    }
+
+    &--light {
+      background: url("../../img/screen-light-mobile.png") no-repeat 50% 50%;
+      background-size: cover;
+    }
   }
 
   .service__link {
     padding-top: 20px;
     padding-left: 35px;
-    width: 290px;
 
     &::after {
       height: 63px;
