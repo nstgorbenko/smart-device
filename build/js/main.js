@@ -6,18 +6,21 @@ var PHONE_MASK = {
 
 var phoneCall = document.querySelector('.main-header__button');
 var overlay = document.querySelector('.overlay');
-
 var popup = document.querySelector('.call');
 var popupCloser = popup.querySelector('.call__close');
 var popupForm = popup.querySelector('.call__letter');
 var popupName = popup.querySelector('[name=popup-name]');
 var popupPhone = popup.querySelector('[name=popup-phone]');
 var popupMessage = popup.querySelector('[name=popup-message]');
-
 var phone = document.querySelector('[name=phone]');
 
 var navList = document.querySelector('.dropdown__checkbox-nav');
 var contactsList = document.querySelector('.dropdown__checkbox-contacts');
+
+var freeAdvise = document.querySelector('.main-product__button');
+var writeUsSection = document.querySelector('.write-us');
+var scrollDown = document.querySelector('.main-product__scroll');
+var featuresSection = document.querySelector('.features');
 
 var isStorageSupport = true;
 var popupNameStorage = '';
@@ -109,4 +112,18 @@ popupForm.addEventListener('submit', function (evt) {
   }
 });
 
+freeAdvise.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  writeUsSection.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
 
+scrollDown.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  featuresSection.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
