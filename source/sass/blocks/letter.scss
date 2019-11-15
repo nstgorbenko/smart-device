@@ -1,3 +1,7 @@
+.letter {
+  position: relative;
+}
+
 .letter__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -136,6 +140,17 @@
   background: url("../img/icon-check.svg") no-repeat 50% 50%;
 }
 
+.letter__checkbox-item {
+  position: absolute;
+  right: 250px;
+  bottom: 21px;
+
+  &--popup {
+    bottom: 17px;
+    left: 13px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .letter__wrapper {
     box-sizing: border-box;
@@ -167,6 +182,11 @@
 
   .letter__checkbox {
     margin-right: 14px;
+  }
+
+  .letter__checkbox-item {
+    right: 264px;
+    bottom: 22px;
   }
 }
 
@@ -207,5 +227,11 @@
   .letter__checkbox {
     margin-top: 31px;
     padding-left: 34px;
+  }
+
+  .letter__checkbox-item {
+    right: auto;
+    bottom: 16px;
+    left: 9px;
   }
 }
