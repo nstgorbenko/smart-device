@@ -24,15 +24,20 @@
 .service__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 51px;
+  margin-top: 21px;
   margin-right: 6px;
 }
 
 .service__item {
+  margin-top: 30px;
+  margin-right: 31px;
   width: 31.5%;
   background: #1b2d37 no-repeat 50% 50%;
   background-size: cover;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   &--production {
     background-image: url("../img/screen-production-desktop.png");
