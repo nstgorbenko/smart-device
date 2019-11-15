@@ -32,6 +32,7 @@
   font: inherit;
 
   &--message {
+    overflow: auto;
     padding-bottom: 10px;
     resize: none;
   }
@@ -137,6 +138,7 @@
 
 @media (max-width: $tablet-width) {
   .letter__wrapper {
+    box-sizing: border-box;
     padding-top: 22px;
   }
 
