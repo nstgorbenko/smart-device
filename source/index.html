@@ -144,7 +144,7 @@
               <input class="letter__item-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
             </p>
             <p class="letter__item">
-              <input class="letter__item-field" type="tel" name="tel" placeholder="Телефон" aria-label="Телефон"
+              <input class="letter__item-field" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон"
                 required>
             </p>
             <p class="letter__item letter__item--message">
@@ -186,7 +186,8 @@
 
         <nav class="main-navigation main-footer__navigation dropdown">
           <p class="main-navigation__title alternative-font">Разделы сайта</p>
-          <input class="dropdown__checkbox dropdown__checkbox-nav visually-hidden" type="checkbox" id="nav-toggle" aria-label="Открыть или закрыть меню">
+          <input class="dropdown__checkbox dropdown__checkbox-nav visually-hidden" type="checkbox" id="nav-toggle"
+            aria-label="Открыть или закрыть меню">
           <label class="dropdown__checkbox-name" for="nav-toggle"></label>
           <div class="main-navigation__list-wrapper dropdown__list">
             <ul class="main-navigation__list list-reset">
@@ -206,7 +207,8 @@
 
         <address class="contacts main-footer__contacts dropdown">
           <p class="contacts__title alternative-font">Наш офис</p>
-          <input class="dropdown__checkbox dropdown__checkbox-contacts visually-hidden" type="checkbox" id="contacts-toggle" checked aria-label="Открыть или закрыть меню">
+          <input class="dropdown__checkbox dropdown__checkbox-contacts visually-hidden" type="checkbox"
+            id="contacts-toggle" checked aria-label="Открыть или закрыть меню">
           <label class="dropdown__checkbox-name" for="contacts-toggle"></label>
           <ul class="contacts__list dropdown__list list-reset">
             <li class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</li>
@@ -239,16 +241,16 @@
     <form class="letter letter--popup call__letter" method="post" action="https://echo.htmlacademy.ru">
       <div class="letter__wrapper">
         <p class="letter__item letter__item--popup">
-          <input class="letter__item-field letter__item-field--popup" name="name" placeholder="Имя" aria-label="Имя"
-            required>
+          <input class="letter__item-field letter__item-field--popup" name="popup-name" placeholder="Имя"
+            aria-label="Имя" required>
         </p>
         <p class="letter__item letter__item--popup">
-          <input class="letter__item-field letter__item-field--popup" type="tel" name="tel" placeholder="Телефон"
-            aria-label="Телефон" required>
+          <input class="letter__item-field letter__item-field--popup" type="tel" name="popup-phone"
+            placeholder="Телефон" aria-label="Телефон" required>
         </p>
         <p class="letter__item letter__item--popup">
-          <textarea class="letter__item-field letter__item-field--message letter__item-field--popup" name="message"
-            rows="3" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required></textarea>
+          <textarea class="letter__item-field letter__item-field--message letter__item-field--popup"
+            name="popup-message" rows="3" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required></textarea>
         </p>
 
         <button class="letter__button letter__button--popup" type="submit">Отправить</button>
@@ -262,6 +264,7 @@
   </section>
 
   <section class="overlay"></section>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
 </body>
 
