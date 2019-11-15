@@ -8,7 +8,8 @@ var form = popup.querySelector('.call__letter');
 var fio = popup.querySelector('[name=name]');
 var tel = popup.querySelector('[name=tel]');
 var message = popup.querySelector('[name=message]');
-
+var navList = document.querySelector('.dropdown__checkbox-nav');
+var contactsList = document.querySelector('.dropdown__checkbox-contacts');
 var isStorageSupport = true;
 var nameStorage = '';
 var telStorage = '';
@@ -27,6 +28,17 @@ var openPopup = function () {
   fio.focus();
   document.body.style.overflow = 'hidden';
 };
+
+var onDropdownToggleClick = function (evt) {
+  if (evt.target === navList) {
+    contactsList.checked = false;
+  } else {
+    navList.checked = false;
+  }
+};
+
+navList.addEventListener('change', onDropdownToggleClick);
+contactsList.addEventListener('change', onDropdownToggleClick);
 
 try {
   nameStorage = localStorage.getItem('fio');
