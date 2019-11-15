@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1170px;
 }
 
 .features__item {
@@ -11,7 +12,7 @@
   padding: 94px 40px 0 42px;
   min-width: 490px;
   min-height: 299px;
-  width: 48%;
+  width: 49%;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   background-color: #ffffff;
@@ -56,6 +57,7 @@
     padding: 66px 0 4px 24px;
     min-width: 345px;
     min-height: 232px;
+    width: 48%;
   }
 
   .features__item-text {
@@ -87,11 +89,12 @@
 @media (max-width: $mobile-width) {
   .features__list {
     flex-direction: column;
+    margin-left: -2px;
   }
 
   .features__item {
     margin-bottom: 20px;
-    padding: 68px 10px 10px 24px;
+    padding: 69px 10px 10px 24px;
     min-width: 290px;
     width: auto;
   }

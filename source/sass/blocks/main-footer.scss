@@ -16,8 +16,8 @@
 .main-footer__wrapper {
   margin: 0 auto;
   min-width: 1000px;
-  max-width: 1411px;
-  width: 74%;
+  max-width: 1430px;
+  width: 75%;
 }
 
 .main-footer__top {
@@ -56,7 +56,8 @@
 }
 
 .main-footer__contacts {
-  flex-shrink: 0;
+  flex-shrink: 1;
+  padding-right: 2px;
 }
 
 .main-footer__bottom {
@@ -75,8 +76,10 @@
 }
 
 .main-footer__copyright {
+  margin-right: 4.9%;
   padding-left: 5px;
-  width: 16%;
+  min-width: 150px;
+  width: 11%;
   opacity: 0.5;
 }
 
@@ -93,7 +96,9 @@
   }
 
   &--desktop {
-    width: 26.5%;
+    margin-right: 6.5%;
+    min-width: 240px;
+    width: 19.7%;
   }
 }
 
@@ -115,6 +120,7 @@
 }
 
 .main-footer__developer {
+  margin-right: 10px;
   margin-left: auto;
   opacity: 0.5;
 }
@@ -135,6 +141,7 @@
 
 .main-footer__navigation {
   margin-right: 20px;
+  width: 30.8%;
 }
 
 
@@ -144,7 +151,7 @@
     background: #fafafa;
 
     &::after {
-      bottom: 69px;
+      bottom: 68px;
     }
 
     &::before {
@@ -164,7 +171,9 @@
   }
 
   .main-footer__logo {
+    margin-top: 1px;
     margin-right: 87px;
+    margin-left: 2px;
     padding-left: 0;
   }
 
@@ -196,11 +205,15 @@
 
   .main-footer__navigation {
     margin-top: 38px;
+    margin-right: auto;
+    padding-left: 2px;
+    width: auto;
   }
 
   .main-footer__contacts {
     margin-top: 38px;
-    min-width: 345px;
+    padding-right: 4px;
+    min-width: 335px;
   }
 
   .main-footer__top {
@@ -215,11 +228,16 @@
   }
 
   .main-footer__privacy {
-    margin-left: 0;
+    margin-left: 4px;
+  }
+
+  .main-footer__developer {
+    margin-right: 3px;
   }
 
   .main-footer__bottom {
     margin-top: 8px;
+    padding-bottom: 10px;
   }
 }
 
@@ -236,7 +254,7 @@
 
   .main-footer__wrapper {
     min-width: 290px;
-    width: 90%;
+    width: 100%;
   }
 
   .main-footer__social-wrapper {
@@ -289,6 +307,7 @@
     margin-top: 30px;
     margin-right: 0;
     padding-bottom: 28px;
+    padding-left: 15px;
     min-width: 270px;
 
     &::after {
@@ -304,6 +323,7 @@
 
   .main-footer__contacts {
     margin-top: 27px;
+    padding-left: 15px;
     min-width: 270px;
   }
 

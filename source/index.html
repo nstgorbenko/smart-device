@@ -44,12 +44,12 @@
       <section class="main-product main-header__main-product">
         <h2 class="main-product__title alternative-font">Печатные платы</h2>
         <p class="main-product__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="main-product__button alternative-font" href="#">
+        <a class="main-product__button alternative-font" href="#write-us">
           <span class="main-product__button-text main-product__button-text--tablet">Получить бесплатную
             консультацию</span>
           <span class="main-product__button-text main-product__button-text--mobile">Бесплатная консультация</span>
         </a>
-        <a class="main-product__scroll" href="#">Скролл вниз</a>
+        <a class="main-product__scroll" href="#features">Скролл вниз</a>
       </section>
       <picture>
         <source media="(min-width: 1024px)" srcset="img/product-desktop.png">
@@ -63,7 +63,7 @@
     <h1 class="visually-hidden">Компания «Smart Device»</h1>
 
     <div class="main__wrapper">
-      <section class="features main__features">
+      <section class="features main__features" id="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="features__list list-reset">
           <li class="features__item">
@@ -133,7 +133,7 @@
       </div>
     </section>
 
-    <section class="write-us main__write-us">
+    <section class="write-us main__write-us" id="write-us">
       <div class="write-us__wrapper">
         <h2 class="visually-hidden">Задать вопрос</h2>
         <form class="letter write-us__letter" method="post" action="https://echo.htmlacademy.ru">
@@ -141,18 +141,18 @@
             <p class="write-us__lead alternative-font">Остались вопросы? Задайте их нам!</p>
             <p class="write-us__text">Мы проконсультируем Вас бесплатно</p>
             <p class="letter__item letter__item--name">
-              <input class="letter__item-field" type="text" name="name" placeholder="Имя" aria-label="Имя">
+              <input class="letter__item-field" type="text" name="name" placeholder="Имя" aria-label="Имя" required>
             </p>
             <p class="letter__item">
-              <input class="letter__item-field" type="tel" name="tel" placeholder="Телефон" aria-label="Телефон">
+              <input class="letter__item-field" type="tel" name="tel" placeholder="Телефон" aria-label="Телефон" required>
             </p>
             <p class="letter__item letter__item--message">
               <textarea class="letter__item-field letter__item-field--message" name="message" rows="6"
-                placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+                placeholder="Ваш вопрос" aria-label="Ваш вопрос" required></textarea>
             </p>
             <button class="letter__button alternative-font" type="submit">Задать вопрос</button>
 
-            <input class="letter__checkbox-item visually-hidden" type="checkbox" name="remember" id="remember" checked>
+            <input class="visually-hidden letter__checkbox-item" type="checkbox" name="remember" id="remember">
             <label class="letter__checkbox" for="remember">Я согласен на обработку персональных данных</label>
           </div>
         </form>
@@ -186,7 +186,7 @@
         <nav class="main-navigation main-footer__navigation dropdown">
           <p class="main-navigation__title alternative-font">Разделы сайта</p>
           <input class="dropdown__checkbox visually-hidden" type="checkbox" id="nav-toggle">
-          <label class="dropdown__checkbox-name" for="nav-toggle"></label>
+          <label class="dropdown__checkbox-name" for="nav-toggle">Открыть/закрыть меню</label>
           <ul class="main-navigation__list dropdown__list list-reset">
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">О компании</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="#">Продукты</a></li>
@@ -201,8 +201,8 @@
 
         <address class="contacts main-footer__contacts dropdown">
           <p class="contacts__title alternative-font">Наш офис</p>
-          <input class="dropdown__checkbox visually-hidden" type="checkbox" id="contacts-toggle">
-          <label class="dropdown__checkbox-name" for="contacts-toggle"></label>
+          <input class="dropdown__checkbox visually-hidden" type="checkbox" id="contacts-toggle" checked>
+          <label class="dropdown__checkbox-name" for="contacts-toggle">Открыть/закрыть меню</label>
           <ul class="contacts__list dropdown__list list-reset">
             <li class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</li>
             <li class="contacts__item">
@@ -234,19 +234,19 @@
     <form class="letter letter--popup call__letter" method="post" action="https://echo.htmlacademy.ru">
       <div class="letter__wrapper">
         <p class="letter__item letter__item--popup">
-          <input class="letter__item-field letter__item-field--popup" name="name" placeholder="Имя" aria-label="Имя">
+          <input class="letter__item-field letter__item-field--popup" name="name" placeholder="Имя" aria-label="Имя" required>
         </p>
         <p class="letter__item letter__item--popup">
           <input class="letter__item-field letter__item-field--popup" type="tel" name="tel" placeholder="Телефон"
-            aria-label="Телефон">
+            aria-label="Телефон" required>
         </p>
         <p class="letter__item letter__item--popup">
           <textarea class="letter__item-field letter__item-field--message letter__item-field--popup" name="message"
-            rows="3" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+            rows="3" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required></textarea>
         </p>
 
         <button class="letter__button letter__button--popup" type="submit">Отправить</button>
-        <input class="letter__checkbox-item visually-hidden" type="checkbox" name="remember" id="agree" checked>
+        <input class="visually-hidden letter__checkbox-item" type="checkbox" name="remember" id="agree">
         <label class="letter__checkbox letter__checkbox--popup" for="agree">Я согласен на обработку персональных
           данных</label>
       </div>

@@ -1,3 +1,7 @@
+.dropdown__checkbox-name {
+  display: none;
+}
+
 @media (max-width: $mobile-width) {
   .dropdown {
     position: relative;
@@ -6,18 +10,21 @@
   .dropdown__checkbox-name {
     position: absolute;
     top: -11px;
-    right: -9px;
+    right: 7px;
+    display: block;
     width: 36px;
     height: 36px;
-    background: url("../img/icon-minus.svg") no-repeat 50% 50%;
+    background: url("../img/icon-plus.svg") no-repeat 50% 50%;
+    font-size: 0;
     cursor: pointer;
 
-    &:hover {
-      outline: 2px solid #1b2d37;
+    &:hover,
+    &:focus {
+      outline: 1px solid #c4c4c4;
     }
 
     &:active {
-      outline: 2px solid #c4c4c4;
+      outline: 1px solid #8c8c8c;
     }
   }
 
@@ -35,11 +42,7 @@
     width: 100%;
   }
 
-  .dropdown__list li {
-    width: 100%;
-  }
-
   .dropdown__checkbox:checked + .dropdown__checkbox-name {
-    background-image: url("../img/icon-plus.svg");
+    background-image: url("../img/icon-minus.svg");
   }
 }

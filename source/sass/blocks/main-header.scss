@@ -3,7 +3,7 @@
   overflow: hidden;
   background: #1b2d37 no-repeat;
   background-image: url("../img/triangle-bg-desktop.svg"), url("../img/header-bg-desktop.png");
-  background-position: 83.5% 50%, 50% 50%;
+  background-position: 82.5% 50%, 50% 50%;
   background-size: auto, cover;
 }
 
@@ -16,6 +16,7 @@
 }
 
 .main-header__logo-image {
+  margin-left: -15px;
   width: 202px;
   height: 52px;
 }
@@ -126,10 +127,9 @@
   margin-top: 161px;
   padding-top: 57px;
   padding-bottom: 144px;
-  padding-left: 6px;
   min-width: 840px;
-  max-width: 1411px;
-  width: 73%;
+  max-width: 1420px;
+  width: 74%;
 }
 
 @media (max-width: $tablet-width) {
@@ -149,6 +149,10 @@
 
   .main-header__logo {
     margin-top: 5px;
+  }
+
+  .main-header__logo-image {
+    margin-left: 2px;
   }
 
   .main-header__contacts {
@@ -199,7 +203,7 @@
   .main-header {
     background: #1b2d37 no-repeat;
     background-image: url("../img/triangle-bg-mobile.svg"), url("../img/header-bg-mobile.png");
-    background-position: calc(100% + 257px) -46px, 0 0;
+    background-position: calc(100% + 337px) -46px, 0 0;
     background-size: auto, cover;
   }
 
@@ -213,6 +217,7 @@
 
   .main-header__logo {
     margin-top: 2px;
+    margin-left: -2px;
     padding-left: 2px;
   }
 

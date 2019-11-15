@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 89px;
-  padding-left: 16px;
+  padding-left: 6px;
   min-width: 1000px;
   max-width: 1186px;
   width: 62%;
@@ -25,7 +25,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 51px;
+  margin-right: 6px;
 }
 
 .service__item {
@@ -52,8 +53,8 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  padding-top: 52px;
-  padding-left: 44px;
+  padding-top: 50px;
+  padding-left: 46px;
   min-height: 620px;
   outline: none;
   color: #ffffff;
@@ -66,7 +67,7 @@
     right: 0;
     bottom: 0;
     width: 63px;
-    height: 61px;
+    height: 63px;
     background: #00b2ff url("../img/icon-arrow.svg") no-repeat 50% 50%;
     content: "";
   }
@@ -76,25 +77,32 @@
     background-color: #006b99;
   }
 
-  &:hover,
-  &:focus {
-    outline: 2px solid #00b2ff;
+  &:hover::before,
+  &:focus::before {
+    position: absolute;
+    top: -10px;
+    left: -3%;
+    width: 106%;
+    height: 640px;
+    border: 3px solid #00b2ff;
+    content: "";
   }
 
-  &:active {
-    outline: 2px solid #006b99;
+  &:active::before {
+    border: 3px solid #006b99;
   }
 }
 
 @media (max-width: $tablet-width) {
   .service__wrapper {
-    padding-top: 49px;
+    padding-top: 50px;
     padding-left: 0;
     min-width: 715px;
     width: 93%;
   }
 
   .service__text {
+    margin-left: -2px;
     width: 630px;
     font-size: 32px;
     line-height: 45px;
@@ -102,6 +110,8 @@
 
   .service__list {
     flex-direction: column;
+    margin-top: 49px;
+    margin-right: 2px;
   }
 
   .service__item {
@@ -129,18 +139,11 @@
     padding-left: 42px;
     min-height: 256px;
 
-    &::after {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 63px;
-      height: 61px;
-      background: #00b2ff url("../img/icon-arrow.svg") no-repeat 50% 50%;
-      content: "";
-    }
-
-    &:hover::before {
-      display: none;
+    &:hover::before,
+    &:focus::before {
+      left: -1%;
+      width: 102%;
+      height: 276px;
     }
   }
 }
@@ -153,7 +156,7 @@
   }
 
   .service__text {
-    padding-left: 10px;
+    padding-left: 12px;
     width: 280px;
     font-size: 28px;
     line-height: 39px;
@@ -161,6 +164,7 @@
 
   .service__list {
     margin-top: 42px;
+    margin-right: 0;
   }
 
   .service__item {

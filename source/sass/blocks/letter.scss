@@ -45,7 +45,7 @@
   }
 
   &:hover {
-    outline: 1px solid #1b2d37;
+    outline: 1px solid #c4c4c4;
   }
 
   &:focus,
@@ -145,7 +145,7 @@
     width: 47%;
 
     &--message {
-      min-width: 600px;
+      min-width: 590px;
     }
 
     &--name {
@@ -164,7 +164,7 @@
   }
 
   .letter__checkbox {
-    margin-right: 8px;
+    margin-right: 14px;
   }
 }
 
@@ -203,6 +203,7 @@
   }
 
   .letter__checkbox {
-    margin-top: 32px;
+    margin-top: 31px;
+    padding-left: 34px;
   }
 }

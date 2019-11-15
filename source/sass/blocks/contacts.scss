@@ -17,6 +17,7 @@
 }
 
 .contacts__item {
+  padding-right: 10px;
   line-height: 25px;
   opacity: 0.5;
 
@@ -46,5 +47,9 @@
 @media (max-width: $mobile-width) {
   .contacts__list {
     margin-top: 30px;
+  }
+
+  .contacts__item {
+    padding-right: 20px;
   }
 }

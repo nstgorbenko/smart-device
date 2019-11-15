@@ -5,7 +5,7 @@
   &::before {
     position: absolute;
     top: 5px;
-    left: -14px;
+    left: -22px;
     width: 220px;
     height: 317px;
     background: url("../img/2005-desktop.png") no-repeat 0 0;
@@ -60,7 +60,7 @@
   .about {
     &::before {
       top: -2px;
-      left: -25px;
+      left: -23px;
       width: 244px;
       height: 362px;
       background: url("../img/2005-tablet.png") no-repeat 0 0;
@@ -76,6 +76,11 @@
 
   .about__text {
     padding-left: 2px;
+  }
+
+  .about__more {
+    margin-top: 42px;
+    margin-left: 3px;
   }
 
   .about__desktop-text {
