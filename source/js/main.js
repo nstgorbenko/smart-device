@@ -18,12 +18,14 @@ var closePopup = function () {
   popup.classList.remove('call__show');
   popup.classList.remove('call__error');
   overlay.classList.remove('overlay__show');
+  document.body.style.overflow = 'visible';
 };
 
 var openPopup = function () {
   popup.classList.add('call__show');
   overlay.classList.add('overlay__show');
   fio.focus();
+  document.body.style.overflow = 'hidden';
 };
 
 try {
