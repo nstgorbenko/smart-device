@@ -116,12 +116,12 @@
 
   .service__list {
     flex-direction: column;
-    margin-top: 49px;
+    margin-top: 19px;
     margin-right: 2px;
   }
 
   .service__item {
-    margin-bottom: 46px;
+    margin-bottom: 16px;
     width: 100%;
 
     &--production {
@@ -166,12 +166,12 @@
   }
 
   .service__list {
-    margin-top: 42px;
+    margin-top: 12px;
     margin-right: 0;
   }
 
   .service__item {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     &--production {
       background-image: url("../img/screen-production-mobile.png");
