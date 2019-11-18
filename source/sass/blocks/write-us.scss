@@ -1,7 +1,7 @@
 .write-us {
   background: #00b2ff no-repeat;
   background-image: url("../img/paper-airplane.png"), url("../img/write-bg-desktop.svg");
-  background-position: calc(70% - 638px) 161px, calc(70% + 53px) -60px;
+  background-position: calc(50% - 354px) 161px, calc(42% + 102px) -60px;
   color: #ffffff;
 }
 
@@ -9,8 +9,9 @@
   display: flex;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1220px;
-  width: 64%;
+  min-width: 1000px;
+  max-width: 1164px;
+  width: 61%;
 }
 
 .write-us__lead {
@@ -28,7 +29,6 @@
 }
 
 .write-us__letter {
-  margin-right: 28px;
   margin-left: auto;
   width: 570px;
 }
@@ -40,6 +40,7 @@
 
   .write-us__wrapper {
     padding-left: 0;
+    min-width: 600px;
     width: 77%;
   }
 
@@ -62,6 +63,7 @@
 
 @media (max-width: $mobile-width) {
   .write-us__wrapper {
+    min-width: 290px;
     width: 91%;
   }
 
