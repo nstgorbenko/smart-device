@@ -11,4 +11,4 @@
 * Some JS (mouse-events, popup)
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/46898622/100606977-4504ad00-331b-11eb-871f-df0c1d571451.png" width="5000">
+<img src="https://user-images.githubusercontent.com/46898622/100606977-4504ad00-331b-11eb-871f-df0c1d571451.png" width="500">
